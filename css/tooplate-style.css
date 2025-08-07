@@ -147,7 +147,7 @@ strong {
 }
 
 .animated-item {
-  font-size: 18px;
+  font-size: 20px;
   line-height: inherit;
   display: block;
   opacity: 0;
@@ -538,7 +538,7 @@ strong {
   }
 
   .animated-item {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .navbar-collapse {
