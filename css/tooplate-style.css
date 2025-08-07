@@ -147,7 +147,7 @@ strong {
 }
 
 .animated-item {
-  font-size: 28px;
+  font-size: 18px;
   line-height: inherit;
   display: block;
   opacity: 0;
@@ -538,7 +538,7 @@ strong {
   }
 
   .animated-item {
-    font-size: 28px;
+    font-size: 18px;
   }
 
   .navbar-collapse {
@@ -553,10 +553,10 @@ strong {
 }
 @media (max-width: 580px) {
   .animated-info {
-    min-width: 400px;
+    min-width: 200px;
   }
   .animated-item {
-    font-size: 30px;
+    font-size: 18px;
   }
 
   .custom-btn-group {
