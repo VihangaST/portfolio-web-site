@@ -74,10 +74,20 @@ h1 {
   white-space: nowrap;
 }
 
+/* Ensure animated titles stay on one line on large screens */
+.animated-item {
+  white-space: nowrap;
+}
+
 @media (min-width: 992px) {
   .animated-text .mr-2 {
     white-space: nowrap;
     display: inline-block;
+  }
+
+  .animated-item {
+    white-space: nowrap;
+    display: block;
   }
 }
 
@@ -137,7 +147,7 @@ strong {
 }
 
 .animated-item {
-  font-size: 38px;
+  font-size: 28px;
   line-height: inherit;
   display: block;
   opacity: 0;
