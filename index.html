@@ -753,7 +753,12 @@ https://www.tooplate.com/view/2115-marvel
     <div id="certificateModal" class="certificate-modal">
       <div class="certificate-modal-content">
         <span class="certificate-modal-close">&times;</span>
-        <img class="certificate-modal-image" id="modalImage" src="" alt="Certificate">
+        <img
+          class="certificate-modal-image"
+          id="modalImage"
+          src=""
+          alt="Certificate"
+        />
         <div class="certificate-modal-caption" id="modalCaption"></div>
       </div>
     </div>
@@ -893,54 +898,57 @@ https://www.tooplate.com/view/2115-marvel
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/smoothscroll.js"></script>
     <script src="js/custom.js"></script>
-    
+
     <!-- Certificate Modal Script -->
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
+      document.addEventListener("DOMContentLoaded", function () {
         // Get modal elements
-        const modal = document.getElementById('certificateModal');
-        const modalImg = document.getElementById('modalImage');
-        const modalCaption = document.getElementById('modalCaption');
-        const closeBtn = document.querySelector('.certificate-modal-close');
-        
+        const modal = document.getElementById("certificateModal");
+        const modalImg = document.getElementById("modalImage");
+        const modalCaption = document.getElementById("modalCaption");
+        const closeBtn = document.querySelector(".certificate-modal-close");
+
         // Get all clickable certificate images
-        const certificateImages = document.querySelectorAll('.certificate-clickable');
-        
+        const certificateImages = document.querySelectorAll(
+          ".certificate-clickable"
+        );
+
         // Add click event to each certificate image
-        certificateImages.forEach(function(img) {
-          img.addEventListener('click', function() {
-            modal.style.display = 'block';
+        certificateImages.forEach(function (img) {
+          img.addEventListener("click", function () {
+            modal.style.display = "block";
             modalImg.src = this.src;
-            modalCaption.textContent = this.getAttribute('data-title') || this.alt;
-            
+            modalCaption.textContent =
+              this.getAttribute("data-title") || this.alt;
+
             // Prevent body scrolling when modal is open
-            document.body.style.overflow = 'hidden';
+            document.body.style.overflow = "hidden";
           });
         });
-        
+
         // Close modal when clicking the close button
-        closeBtn.addEventListener('click', function() {
+        closeBtn.addEventListener("click", function () {
           closeModal();
         });
-        
+
         // Close modal when clicking outside the image
-        modal.addEventListener('click', function(e) {
+        modal.addEventListener("click", function (e) {
           if (e.target === modal) {
             closeModal();
           }
         });
-        
+
         // Close modal with Escape key
-        document.addEventListener('keydown', function(e) {
-          if (e.key === 'Escape' && modal.style.display === 'block') {
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && modal.style.display === "block") {
             closeModal();
           }
         });
-        
+
         // Function to close modal
         function closeModal() {
-          modal.style.display = 'none';
-          document.body.style.overflow = 'auto';
+          modal.style.display = "none";
+          document.body.style.overflow = "auto";
         }
       });
     </script>
