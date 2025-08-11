@@ -29,9 +29,9 @@
 
 Tooplate 2115 Marvel
 
-https://www.tooplate.com/view/2115-marvel
+                
+   
 
--->
   </head>
   <body>
     <!-- MENU -->
@@ -252,6 +252,19 @@ https://www.tooplate.com/view/2115-marvel
                             Your browser does not support the video tag.
                           </video>
                         </div> -->
+                        <!-- Quizee Presentation Modal -->
+                        <div id="quizeePresentationModal" class="custom-modal">
+                          <div class="custom-modal-content">
+                            <span class="custom-modal-close" id="closeQuizeeModal">&times;</span>
+                            <iframe
+                              src="presentation/Quizee_Festival-Based In-Shop Quiz Web App.pdf"
+                              width="100%"
+                              height="350"
+                              style="border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.08); border:none;"
+                              title="Quizee Project Presentation PDF"
+                            ></iframe>
+                          </div>
+                        </div>
                         <div class="project-tech">
                           <span class="tech-tag">React.js</span>
                           <span class="tech-tag">Tailwind CSS</span>
@@ -284,7 +297,7 @@ https://www.tooplate.com/view/2115-marvel
                           <a
                             href="#"
                             class="btn btn-sm custom-btn"
-                            target="_blank"
+                            id="quizeeDemoBtn"
                           >
                             <i class="uil uil-external-link-alt"></i> Live Demo
                           </a>
@@ -1261,6 +1274,75 @@ https://www.tooplate.com/view/2115-marvel
         </div>
       </div>
     </footer>
+
+    <style>
+      .custom-modal {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+        background: rgba(0,0,0,0.5);
+      }
+      .custom-modal-content {
+  background: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+  position: relative;
+      }
+      .custom-modal-close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 2rem;
+        color: #333;
+        cursor: pointer;
+        z-index: 10;
+      }
+      @media (max-width: 600px) {
+        .custom-modal-content iframe {
+          height: 300px;
+        }
+      }
+    </style>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var demoBtn = document.getElementById("quizeeDemoBtn");
+        var modal = document.getElementById("quizeePresentationModal");
+        var closeBtn = document.getElementById("closeQuizeeModal");
+        if (demoBtn && modal && closeBtn) {
+          demoBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            modal.style.display = "block";
+            document.body.style.overflow = "hidden";
+          });
+          closeBtn.addEventListener("click", function () {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto";
+          });
+          window.addEventListener("click", function (event) {
+            if (event.target === modal) {
+              modal.style.display = "none";
+              document.body.style.overflow = "auto";
+            }
+          });
+          document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape" && modal.style.display === "block") {
+              modal.style.display = "none";
+              document.body.style.overflow = "auto";
+            }
+          });
+        }
+      });
+    </script>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
