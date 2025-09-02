@@ -317,7 +317,7 @@ strong {
 }
 
 .dark-mode {
-  background: #0c0c0d;
+  background: #1a1a1a;
 }
 .dark-mode .navbar-light .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.8);
@@ -348,6 +348,10 @@ strong {
 .dark-mode .owl-carousel .owl-nav button.owl-prev,
 .dark-mode .owl-carousel button.owl-dot {
   color: #ffffff;
+}
+
+.dark-mode p {
+  color: #878787;
 }
 
 .timeline-wrapper {
