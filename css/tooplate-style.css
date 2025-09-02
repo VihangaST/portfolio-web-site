@@ -668,21 +668,21 @@ strong {
   color: #5b5b5b;
   font-size: 17px;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: auto
   flex-grow: 1;
 }
 
 .project-tech {
-  margin-bottom: 20px;
+  margin: 1px 5px;
 }
 
 .tech-tag {
   display: inline-block;
   background: #f8f9fa;
   color: #474559;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: bold;
-  padding: 8px 12px;
+  padding: 4px 8px;
   border-radius: 15px;
   margin: 3px 6px 3px 0;
   border: 1px solid #e9ecef;
