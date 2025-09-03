@@ -1,3 +1,7 @@
+/* Hide owl-carousel navigation arrows in projects section */
+.project .owl-nav {
+  display: none !important;
+}
 /*
 
 Tooplate 2115 Marvel
@@ -390,7 +394,8 @@ strong {
 .timeline-info {
   display: inline-block;
   vertical-align: top;
-  max-width: 432px;
+  width: 600px;
+  max-width: 700px;
   margin-left: 6em;
 }
 .timeline-info small {
