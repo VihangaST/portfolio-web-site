@@ -1,3 +1,17 @@
+/* Ensure 4 items per row in certifications carousel on large screens */
+.certifications-carousel .item {
+  padding: 10px;
+}
+@media (min-width: 1200px) {
+  .certifications-carousel .item {
+    width: 25%;
+    max-width: 25%;
+    flex: 0 0 25%;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
 /* Hide owl-carousel navigation arrows in projects section */
 .project .owl-nav {
   display: none !important;
