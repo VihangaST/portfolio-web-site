@@ -651,6 +651,11 @@ strong {
   }
 }
 @media (max-width: 320px) {
+
+  .timeline-info{
+    max-width :70%; 
+  }
+
   .animated-text {
     margin-top: 0;
   }
