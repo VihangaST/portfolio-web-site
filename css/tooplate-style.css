@@ -434,11 +434,30 @@ strong {
 
 .timeline-info {
   display: inline-block;
+  padding: 15px;
+  border-radius: 1rem;
   vertical-align: top;
   width: 600px;
   max-width: 700px;
   margin-left: 6em;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  
 }
+
+.dark-mode .timeline-info{
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.15);
+
+}
+.timeline-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.dark-mode .timeline-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(244, 244, 244, 0.356);
+}
+
 .timeline-info small {
   color: #474559;
   font-size: 16px;
@@ -532,12 +551,15 @@ strong {
 .contact-info {
   background: #474559;
   border-radius: 0 0 3px 3px;
+  box-shadow: 2px 8px 25px rgba(90, 90, 90, 0.35);
   position: relative;
   bottom: 8px;
 }
 
 .dark-mode .contact-info {
   background: #2c2b2f;
+  box-shadow: 2px 8px 25px rgba(90, 90, 90, 0.35);
+
 
 }
 .contact-info p,
@@ -725,7 +747,7 @@ strong {
 }
 
 .project-tech {
-  margin: 1px 5px;
+  margin: 1px 5px 15px 0;
 }
 
 .tech-tag {
@@ -1392,7 +1414,7 @@ strong {
 
 /* Technology Stack Section Styling */
 .technologies {
-  background: #f8f9fa;
+  background: #edf0f2;
 }
 
 .about{
@@ -1400,11 +1422,11 @@ strong {
 }
 
 .resume{
-  background: #f8f9fa;
+  background: #edf0f2;
 }
 
 .project{
-  background: #f8f9fa;
+  background: #edf0f2;
 }
 
 .experience{
@@ -1416,6 +1438,14 @@ strong {
 
 }
 
+.footer{
+  background: #edf0f2;
+}
+
+.dark-mode .footer{
+  background: #171717;
+}
+
 .tech-item {
   text-align: center;
   padding: 20px;
@@ -1425,6 +1455,19 @@ strong {
 .tech-item:hover {
   transform: translateY(-10px);
 }
+
+.profile-image {
+  text-align: center;
+  padding: 20px;
+  transition: all 0.3s ease;
+  
+}
+
+.profile-image:hover{
+  transform: translateY(-10px);
+}
+
+
 
 .tech-image {
   width: 80px;
@@ -1473,15 +1516,15 @@ strong {
 }
 
 .dark-mode .resume{
-  background: #171717;
+  background:#222222;
 }
 
 .dark-mode .project{
-  background: #171717;
+  background: #222222;
 }
 
 .dark-mode .technologies {
-  background: #171717;
+  background: #222222;
 }
 
 .dark-mode .experience{
