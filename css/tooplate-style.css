@@ -437,8 +437,8 @@ strong {
   padding: 15px;
   border-radius: 1rem;
   vertical-align: top;
-  width: 600px;
-  max-width: 700px;
+  /* width: 600px; */
+  max-width: 1000px;
   margin-left: 6em;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   
@@ -1284,8 +1284,8 @@ strong {
 }
 
 .dark-mode .certificate-card {
-  background: #1a1a1a;
-  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+  background: #3939395c;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.01);
 }
 
 .dark-mode .certificate-content h4,
