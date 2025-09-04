@@ -366,6 +366,7 @@ strong {
 }
 .dark-mode .navbar-light .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.8);
+  background: #1a1a1a;
 }
 .dark-mode .navbar-light .navbar-nav .nav-link:hover {
   color: #ffc200;
@@ -388,6 +389,7 @@ strong {
 .dark-mode h6,
 .dark-mode .color-mode {
   color: #ffffff;
+  background: #1a1a1a;
 }
 .dark-mode .owl-carousel .owl-nav button.owl-next,
 .dark-mode .owl-carousel .owl-nav button.owl-prev,
