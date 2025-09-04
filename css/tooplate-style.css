@@ -691,20 +691,22 @@ strong {
 /* Enhanced Project Layout - Two Column Design */
 .project-info {
   position: relative;
-  background: #fefff7;
+  background: #f8f9fa;
   border-radius: 12px;
   box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.12);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin: 20px;
+  /* margin: 20px; */
   max-width: 1400px;
   margin: 0 auto 40px auto;
   width: 95%;
+
 }
 
 .project-info:hover {
-  transform: translateY(-8px);
+  transform: translateY(10px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+ 
 }
 
 .project-info .row {
@@ -724,7 +726,7 @@ strong {
 .project-info img {
   width: 100%;
   height: 500px;
-  object-fit: fill;
+  object-fit: fit;
   border-radius: 12px 0 0 12px;
 }
 
@@ -748,7 +750,7 @@ strong {
   color: #5b5b5b;
   font-size: 17px;
   line-height: 1.6;
-  margin-bottom: auto
+  margin-bottom: auto,
   flex-grow: 1;
 }
 
