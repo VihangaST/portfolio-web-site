@@ -1,3 +1,12 @@
+/* Remove unnecessary bottom space in project items */
+.project-info {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+.project-details {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
 /* Section backgrounds: Light mode */
 .about { background: #f5f7fa; }
 .project { background: #e9ecef; }
