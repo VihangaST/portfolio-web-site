@@ -755,7 +755,7 @@ strong {
 
 .project-details {
   margin-top: 25px;
-  height: 300px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
