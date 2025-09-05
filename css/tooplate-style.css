@@ -594,6 +594,11 @@ strong {
     position: relative;
     bottom: 50px;
   }
+
+   .timeline-info{
+    min-width: 920px;
+  }
+
 }
 @media (max-width: 991px) {
   .full-screen {
@@ -612,6 +617,8 @@ strong {
   .contact-info {
     padding: 0 2rem;
   }
+  
+ 
 
  
 }
@@ -651,6 +658,7 @@ strong {
   .animated-item {
     font-size: 18px;
   }
+  
 
   .custom-btn-group {
     text-align: center;
