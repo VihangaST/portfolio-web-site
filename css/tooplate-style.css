@@ -601,6 +601,8 @@ strong {
   .contact-info {
     padding: 0 2rem;
   }
+
+ 
 }
 @media (max-width: 767px) {
   h1 {
@@ -628,6 +630,8 @@ strong {
   .navbar-expand-sm .navbar-nav .nav-link {
     padding: 3px 20px;
   }
+
+ 
 }
 @media (max-width: 580px) {
   .animated-info {
@@ -654,6 +658,8 @@ strong {
     display: block;
     margin: 10px 0 0 0;
   }
+
+  
 }
 @media (max-width: 320px) {
 
@@ -716,6 +722,7 @@ strong {
 .project-info .row {
   margin: 0;
   min-height: 500px;
+  height: auto;
   align-items: stretch;
 }
 
@@ -729,14 +736,15 @@ strong {
 
 .project-info img {
   width: 100%;
-  height: 500px;
+  height: auto;
   object-fit: fit;
   border-radius: 12px 0 0 12px;
+
 }
 
 .project-details {
-  margin-top: 18px;
-  height: auto;
+  margin-top: 25px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -759,7 +767,11 @@ strong {
 }
 
 .project-tech {
-  margin: 1px 5px 15px 0;
+  margin: 5px 5px 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .tech-tag {
@@ -768,7 +780,7 @@ strong {
   color: #474559;
   font-size: 12px;
   font-weight: bold;
-  padding: 4px 8px;
+  padding: 5px 10px;
   border-radius: 15px;
   margin: 3px 6px 3px 0;
   border: 1px solid #e9ecef;
