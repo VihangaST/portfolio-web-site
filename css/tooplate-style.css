@@ -1,3 +1,34 @@
+/* Research Card Styling */
+.research-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+  /* margin-bottom: 32px; */
+}
+.research-details {
+  padding: 16px 32px;
+}
+.research-track {
+  background: #ffe066;
+  color: #222;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-weight: 600;
+  margin-right: 8px;
+  display: inline-block;
+}
+.research-published {
+  background: #1add2a;
+  color: #222;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-weight: 600;
+  display: inline-block;
+}
+.research-abstract {
+  text-align: justify;
+  display: block;
+}
 /* Remove unnecessary bottom space in project items */
 .project-info {
   margin-bottom: 0 !important;
