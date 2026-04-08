@@ -1,3 +1,30 @@
+/* Technology Stack Category Styling */
+.tech-category {
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 24px 18px 10px 18px;
+  margin-bottom: 32px;
+}
+.tech-category-title {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #2BA283;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+}
+.tech-category .row {
+  margin-bottom: 0;
+}
+@media (max-width: 991px) {
+  .tech-category {
+    padding: 16px 6px 6px 6px;
+  }
+  .tech-category-title {
+    font-size: 1.1em;
+    margin-bottom: 12px;
+  }
+}
 /* Research Card Styling */
 .research-card {
   background: #fff;
